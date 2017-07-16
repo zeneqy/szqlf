@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu tak mudah berkenalan dengan orang lain?~Ya.~Tidak.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~Kamu tak mudah percaya dengan orang lain?~Ya.~Tidak.');
+point[o++] =('2~10~0');
+quiz[r++] =('3~Sekalipun pada anggota keluarga, saudara, pasangan, atau sahabat dekat, kamu tak bisa 100% percaya mereka?~Ya.~Tidak.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~Kamu lebih suka menyelesaikan masalahmu sendiri?~Ya.~Tidak.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~Kamu tak terlalu dekat dengan teman lawan jenis?~Ya.~Tidak.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~Kamu tak berbagi informasi pribadi (misal: tanggal ulang lahir, No. telepon, status hubungan, dst) kepada orang asing?~Ya.~Tidak.');
+point[o++] =('6~10~0');
+quiz[r++] =('7~Jika bicara, kamu hanya menyampaikan hal yang penting saja?~Ya.~Tidak.');
+point[o++] =('7~10~0');
+quiz[r++] =('8~Kamu sering menyalahkan ketidakberuntunganmu setiap ada hal buruk terjadi?~Ya.~Tidak.');
+point[o++] =('8~10~0');
+quiz[r++] =('9~Sebelum memutuskan berpacaran. Hal pertama terlintas di pikiranmu: Apa kamu akan terluka/disakiti lagi?~Ya.~Tidak.');
+point[o++] =('9~10~0');
+quiz[r++] =('10~Jika nonton film, maka film sedih/horor jadi pilihan utamamu?~Ya.~Tidak.');
+point[o++] =('10~10~0');

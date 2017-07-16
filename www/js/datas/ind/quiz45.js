@@ -1,0 +1,23 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 8;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Jika terjadi kebakaran di hutan dan kamu punya kesempatan untuk menyelamatkan seekor binatang. Binatang apa yang akan kamu selamatkan?~Kuda.~Domba.~Kelinci.~Rusa.');
+point[o++] =('1~0~1~2~3');
+quiz[r++] =('2~Kamu di utus ke Afrika, untuk membawa pulang seekor binatang. Binatang apa yang bakal kamu bawa pulang?~Ular.~Jeparah.~Monyet.~Singa.');
+point[o++] =('2~0~1~2~3');
+quiz[r++] =('3~Jika kamu dapat mengubah dirimu jadi seekor binatang, kapan pun kamu mau. Kamu pilih jadi binatang apa?~Ular.~Kucing.~Anjing.~Kuda.');
+point[o++] =('3~0~1~2~3');
+quiz[r++] =('4~Binatang apa yang paling kamu benci?~Ular.~Buaya.~Ikan hiu.~Singa.');
+point[o++] =('4~0~1~2~3');
+quiz[r++] =('5~Jika kamu bisa bicara bahasa binatang. Kamu ingin bicara dengan binatang apa?~Kelinci.~Kuda.~Domba.~Burung.');
+point[o++] =('5~0~1~2~3');
+quiz[r++] =('6~Saat kamu tersesat di hutan, siapa yang kamu pilih untuk menemanimu?~Burung.~Babi.~Sapi.~Manusia.');
+point[o++] =('6~0~1~2~3');
+quiz[r++] =('7~Jika kamu harus memilih, maka binatang apa yang kamu pilih sebagai sahabat?~Dinosaurus.~Macan.~Beruang.~Singa.');
+point[o++] =('7~0~1~2~3');
+quiz[r++] =('8~Jika kamu dapat berubah jadi binatang selama satu hari. Kamu ingin berubah apa?~Kucing.~Singa.~Leopard.~Kuda.');
+point[o++] =('8~0~1~2~3');

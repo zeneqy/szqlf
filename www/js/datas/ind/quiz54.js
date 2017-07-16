@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu selalu diundang dalam berbagai acara atau kegiatan?~Ya.~Tidak.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~Kamu tak mau bergantung pada orang lain?~Ya.~Tidak.');
+point[o++] =('2~0~10');
+quiz[r++] =('3~Temanmu selalu minta pendapatmu?~Ya.~Tidak.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~Temanmu sering berbagi (berbagai hal) denganmu?~Ya.~Tidak.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~Temanmu selalu hadir untukmu (baik di saat senang dan sulit)?~Ya.~Tidak.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~Jika ada yang meledekmu, kamu menanggapi dengan serius/tersinggung?~Ya.~Tidak.');
+point[o++] =('6~0~10');
+quiz[r++] =('7~Kamu aktif dalam kegiatan sosial?~Ya.~Tidak.');
+point[o++] =('7~10~0');
+quiz[r++] =('8~Kenalanmu biasanya dikenalin dari dari sahabat-sahabatmu (bukan berkenalan sendiri)?~Ya.~Tidak.');
+point[o++] =('8~0~10');
+quiz[r++] =('9~Kamu biasanya hanya berteman dengan mereka yang punya banyak kesamaan dengan dirimu?~Ya.~Tidak.');
+point[o++] =('9~0~10');
+quiz[r++] =('10~(Hampir) semua orang hadir di acaramu (mis: pesta ulang tahun), karena mereka perduli dengan dirimu?~Ya.~Tidak.');
+point[o++] =('10~10~0');

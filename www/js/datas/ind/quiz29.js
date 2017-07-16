@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu suka TP?~Tak pernah.~Selalu.~Kadang-kadang.');
+point[o++] =('1~0~2~1');
+quiz[r++] =('2~Jika kamu suka pada seseorang, bagaimana caramu menunjukkan rasa suka?~Agresif.~Perlahan, tapi pasti.~Cepat, tapi tetap berhati-hati.');
+point[o++] =('2~0~2~1');
+quiz[r++] =('3~Cara terbaik menghabiskan waktu bersama kekasih?~Nonton DVD di rumah.~Makan malam di luar.~Pesta dan bertemu banyak orang.');
+point[o++] =('3~1~2~0');
+quiz[r++] =('4~Apa daya pikat utamamu?~Fisik (cakep/keren).~Cerdas.~Kepribadian.');
+point[o++] =('4~2~1~0');
+quiz[r++] =('5~Harapanmu akan suasana malam yang menyenangkan?~Kreatif dan unik.~Tenang dan romantis.~Klasik dan aman.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~Kamu cenderung tertutup terutama terhadap orang yang baru kamu kenal, tapi kamu tak keberatan jika dia penasaran dengan dirimu?~Benar.~Ada benarnya juga.~Salah.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Siapa yang menurutmu lebih berperan dalam suatu hubungan?~Pasanganmu.~Kamu sendiri.~Kalian berdua.');
+point[o++] =('7~0~0~2');
+quiz[r++] =('8~Seberapa cepat/mudah kamu jatuh Cinta?~Lambat.~Cepat.~Tergantung keadaan.');
+point[o++] =('8~2~0~1');
+quiz[r++] =('9~Karakter seperti apa yang kamu suka dari lawan jenis?~Sukses secara finansial.~Idealis dan mau menciptakan dunia yang lebih baik.~Menempatkan keluarga/sahabat sebagai prioritas utama.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~Menurutmu, seharusnya seorang kekasih juga berperan sebagai sahabat?~Terkadang kamu lebih terbuka pada seorang sahabat daripada kekasih.~Tidak boleh mencampuradukkan antara teman dan kekasih.~Iya, memang harusnya demikian.');
+point[o++] =('10~1~0~2');

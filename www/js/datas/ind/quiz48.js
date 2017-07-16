@@ -1,0 +1,23 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 8;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Pasanganmu telat tiga jam tanpa memberi penjelasan. Kamu:~Lihat jam tangan dan tampak kesal.~Katakan, “aku mengkhawatirkanmu.”~Meninggalkan Dia beberapa jam yang lalu (saat ini kamu sedang asyik nongkrong bersama teman-temanmu).');
+point[o++] =('1~0~1~2');
+quiz[r++] =('2~Dia nolak bertunangan denganmu. Kamu:~Tak terlalu memikirkannya. Paling-paling Dia berubah pikiran nanti.~Tunggu satu bulan, baru kembali membahas hal ini.~Beri dia tengat waktu satu/beberapa bulan lagi, jika Dia tak berubah pikiran, maka mending kalian putus.');
+point[o++] =('2~0~1~2');
+quiz[r++] =('3~Kamu suka film action, sementara Dia suka film drama. Suatu hari ketika berada di bioskop, film yang kamu dan Dia suka sedang tayang pada waktu bersamaan. Kamu:~Minggu ini nonton film yang Dia suka, minggu depan nonton film yang kamu suka.~Kalian sepakat nonton kedua film itu di hari yang sama.~Ngotot nonton film pilihanmu, atau mending pulang saja.');
+point[o++] =('3~0~1~2');
+quiz[r++] =('4~Kalian sudah jadian hampir satu tahun, tapi Dia tak pernah mengajakmu datang ke rumahnya. Kamu:~Santai saja. Suatu hari nanti, pasti dia ngundang kamu ke rumahnya.~Tanya Dia baik-baik, “kapan aku bisa berkunjung ke rumahmu, sayang.”~(Tanpa memberitahu terlebih dahulu), tiba-tiba, kamu muncul di rumah Dia dan memperkenalkan diri sebagai pacar ke orangtuanya.');
+point[o++] =('4~0~1~2');
+quiz[r++] =('5~Kamu ingin beli mobil baru (dengan uangmu sendiri) . Kamu:~Biarkan Dia memutuskan mobil apa yang akan kamu beli.~Minta pendapat Dia, tentang mobil yang akan kamu beli.~Tak perlu tanya Dia, toh, ini uangmu sendiri.');
+point[o++] =('5~0~1~2');
+quiz[r++] =('6~Kamu janji bertemu seorang teman lama. Kebetulan, Dia tak suka temanmu ini. Kamu:~Bilang ke temanmu, tak bisa datang.~Membujuk Dia baik-baik agar mengijinkan kamu bertemu teman lamamu.~Pergi begitu saja, biarpun Dia tetap tak mengijinkan.');
+point[o++] =('6~0~1~2');
+quiz[r++] =('7~Pasanganmu perokok berat, padahal sudah janji mau berhenti sejak beberapa bulan lalu. Kamu:~Cuek, tapi begitu Dia merokok, kamu menyingkir ke area yang bebas rokok.~Kamu berusaha meyakinkan Dia:Rokok tak baik untuk kesehatan.~Ketika Dia sedang merokok. Kamu rebut rokoknya dan membuang jauh-jauh.');
+point[o++] =('7~0~1~2');
+quiz[r++] =('8~Saat karaoke, suaramu cempreng dan bikin dia tak nyaman. Dia:~Tak komentar, tapi diam-diam menutup telinga saat tak kamu perhatikan.~Ajak kamu nyanyi bersamanya.~Menggerutu dan segera mengecilkan volume mic-mu.');
+point[o++] =('8~0~1~2');

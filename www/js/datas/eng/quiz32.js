@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~If you have problems. You:~Solve most problems yourself.~Talk to your partner briefly about your problems, but don\'t want to involve him/her.~Let your partner help you out of the problems.');
+point[o++] =('1~0~1~2');
+quiz[r++] =('2~When approach someone you like. You:~Like many guys/girls at the same time.~Keep your focus on him/her, until you figure out her feelings to you.~You can\'t keep your focus on one guy/girl if later you find a more attractive guy/girl.');
+point[o++] =('2~2~1~0');
+quiz[r++] =('3~What do you think about riddles (with the one you like)?~Fun and interesting.~Okay, but not too often/much.~Bored and waste your time.');
+point[o++] =('3~2~1~0');
+quiz[r++] =('4~What are you like in a relationship?~Don\'t travel too much, but Love your partner very much.~Well organized and scheduled.~Have a bunch of outdoor activities with your partner.');
+point[o++] =('4~1~0~2');
+quiz[r++] =('5~What is romantic moment to you?~Cook for dinner and watch DVD with him/her.~Go hiking/Camping with him/her.~Dance all night with him/her, but in the next morning go to go for (extreme) sports (eq bungee jumping, rafting, etc).');
+point[o++] =('5~0~1~2');
+quiz[r++] =('6~How your Ex is gonna describe you in one word?~Hyperactive.~Full of spirit/passionate.~Quite.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~What can make you disappointed?~If you feel constrained.~If you feel bored.~If your partner is smarter than you.');
+point[o++] =('7~2~1~0');
+quiz[r++] =('8~What is your perfect match like?~Cool.~Adventurous and romantic.~Nice, but a little bit shy.');
+point[o++] =('8~0~2~1');
+quiz[r++] =('9~Have you ever had a thought your boy/girlfriend isn\'t your soulmate?~Yes, sometimes you think you chose the wrong guy/girl.~Nobody is perfect, you\'re happy with him/her.~Yes, but rarely.');
+point[o++] =('9~2~0~1');
+quiz[r++] =('10~If you have a fight with your partner. You:~Can\'t control yourself.~Keep calm and positive.~Slam the door and lock yourself in the room.');
+point[o++] =('10~1~2~0');

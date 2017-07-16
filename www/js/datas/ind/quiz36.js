@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Seberapa penting kebebasan bagimu?~Sangat penting.~Tak terlalu penting.~Lumayan penting.');
+point[o++] =('1~2~0~1');
+quiz[r++] =('2~Hal pertama yang kamu lakukan jika orang yang kamu sukai berada di dekatmu?~Kamu TP, tapi jika tak direspon maka tak lamu lanjutkan.~Kamu TP sampai Dia memberi respon positif.~Kamu tak suka TP, tapi kamu punya cara lain untuk pendekatan.');
+point[o++] =('2~1~2~0');
+quiz[r++] =('3~Apa yang bisa membuatmu girang?~Dia susah ditaklukkan.~Dia agresif.~Dia tak mudah didapat dan tak agresif.');
+point[o++] =('3~2~0~1');
+quiz[r++] =('4~Apa kamu punya bayangan tentang masa depan kalian?~Iya, bahkan jauh-jauh hari sebelum kamu dan Dia jadian.~Kamu akan lebih mengenal Dia seiring berjalannya waktu. Setelah itu baru kamu bisa menyadari masa depan hubungan kalian.~Kamu masih bingung, sampai sekarang.');
+point[o++] =('4~2~1~0');
+quiz[r++] =('5~Apa kamu ingin tahu segala sesuatu tentang Dia?~Tidak, sisi misterius dari diri Dia justeru kamu suka.~Ya, kamu adalah orang paling berhak mengetahui segala sesuatu tentang Dia.~Ya, tapi tak masalah jika dia merahasiakan sesuatu darimu.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~Apa Pasanganmu juga dapat jadi sahabat baikmu?~Tentu saja, hal yang sangat baik!~Bukan ide baik, karena dapat mengurangi kemesraan di antara kalian.~Harus melihat situasi seperti apa terlebih dahulu.');
+point[o++] =('6~2~0~1');
+quiz[r++] =('7~Apakah penting untuk kenal lebih baik terlebih dahulu dengan seseorang sebelum memulai suatu hubungan?~Iya, tapi kurang penting juga.~Iya, untuk saling mengerti satu sama lain.~Tak penting. Kamu bahkan percaya Cinta pada pandangan pertama.');
+point[o++] =('7~1~2~0');
+quiz[r++] =('8~Hal yang paling penting untuk menciptakan hubungan harmonis?~Petualangan.~Kemesraan.~Waktu.');
+point[o++] =('8~2~1~0');
+quiz[r++] =('9~Jika kekasihmu terlalu posesif. Kamu:~Menerima dia apa adanya.~Mengakhiri hubungan.~Dia harus lebih memberimu kebebasan.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~Hal yang mungkin dapat merusak hubungan kalian?~Ketidakmapanan.~Ada pihak ketiga.~Kurang komunikasi.');
+point[o++] =('10~2~0~1');

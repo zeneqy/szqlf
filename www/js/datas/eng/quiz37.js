@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~What make you both different from other couples?~More or less the same.~You both are rarely arguing.~You both more often argue each other than other couples.');
+point[o++] =('1~2~0~1');
+quiz[r++] =('2~If you break up with your boy/girlfriend. You:~Cry wildly.~Sad but don\'t want to look weak.~Have a big fight ever with him/her.');
+point[o++] =('2~1~2~0');
+quiz[r++] =('3~If you have a fight with your partner, You:~You could be rude.~Stay calm and try to figure out the problem.~Lots of yelling and swearing.');
+point[o++] =('3~2~0~1');
+quiz[r++] =('4~What do you expect from your partner?~Full of confident.~Not selfish and generous.~Always full of spirit/passionate.');
+point[o++] =('4~2~1~0');
+quiz[r++] =('5~Do you think intimacy is important in a relationship?~Yes important!~Sometimes!~Not important!');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~Are you jealous guy/girl?~Sometimes, if you have a strong reason.~Always. Jealous is a sign of affection.~Never.');
+point[o++] =('6~2~0~1');
+quiz[r++] =('7~What quality do you see in your partner?~Sexy.~Rich.~Full of Love.');
+point[o++] =('7~1~2~0');
+quiz[r++] =('8~How do you feel if you\'re partner want dominate you?~Don\'t mind at all.~Won\'t let it happen, you want to dominate him/her instead.~Won\'t let it happen, unless he/she \'wants\' a breakup.');
+point[o++] =('8~2~1~0');
+quiz[r++] =('9~Are you attracted with a powerful guy/woman?~Yes true!~Sometimes.~Never.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~In a relationship, between husband and wife who control the money?~You want to control your husband/wife\'s wealth.~Your husband/wife manage your wealth.~You both share or manage the money together.');
+point[o++] =('10~2~0~1');

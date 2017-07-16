@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="app_framework/css/af.ui.min.css">
+  <link rel="stylesheet" type="text/css" href="app_framework/css/icons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/style_select.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.confirm.css" />
+  <title>sZ Quiz Love Free</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <style type="text/css">
+   /* Prevent copy paste for all elements except text fields */
+   		*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+   		input, textarea  { -webkit-user-select:text; }
+  </style>
+  <script src="intelxdk.js"></script>
+  <script src='cordova.js'></script> 
+  <script src='xhr.js'></script>
+  <!--
+      Include xhr.js in your index.html when using web services that make cross origin requests
+      This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
+      Intel(R) App Preview mobile app.
+      DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
+  -->
+  <script type="text/javascript">
+   /* This code is used to run as soon as Intel activates */
+   		var onDeviceReady=function(){
+   			//hide splash screen
+   			intel.xdk.device.hideSplashScreen();
+   		};
+		document.addEventListener("intel.xdk.device.ready",function() {
+			intel.xdk.device.addVirtualPage(); 	
+		},false);
+			document.addEventListener("menubutton", function(e){
+				confirm_exit();
+			}, false);
+			document.addEventListener("backbutton", function(e){
+					e.preventDefault();
+			}, false);	
+  </script> 
+  
+  <script type="application/javascript" src="app_framework/appframework.ui.min.js"></script>
+  <script type="application/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/iscroll-lite.js"></script>
+  <script type="application/javascript" src="js/index_user_scripts.js"></script>
+  <script type="application/javascript" src="js/af_subpage.js"></script>
+  <script type="text/javascript" src="js/quizhead.js"></script>
+  <script type="text/javascript" src="js/datas/eng/questions_list.js"></script>
+
+  <script src="js/jquery.confirm.js"></script>
+<script src="js/alert_script.js"></script>
+<script>
+    
+        //********************
+            // Start of Admob code
+            //********************
+                       var admobid = {};
+                        if( /(android)/i.test(navigator.userAgent) ) {
+                            admobid = {  // for Android
+                                banner: 'ca-app-pub-2146693884937462/8507583838'
+                            };
+                            } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+                                admobid = { // for iOS
+                                banner: 'your iOS admob ad unit id'
+                            };
+                            } else {
+                                admobid = { // for Windows Phone
+                                banner: 'your windows phone admob ad unit id'
+                            };
+                        }
+                        
+                        function initApp() {
+                            if (AdMob) {
+                                AdMob.createBanner({
+                                adId : admobid.banner,
+                                position : AdMob.AD_POSITION.BOTTOM_CENTER,
+                                autoShow : true
+                                });
+                            }
+                        }    
+     </script>     
+<script>
+  	if(get_windowheight()=='0'||get_windowheight()==''||get_windowheight()==undefined)store_windowheight();
+    af.feat.nativeTouchScroll=true;
+	/*$(function() {
+		FastClick.attach(document.body);
+	});*/
+	//var myScroll,myScroll2;
+	var myScroll;
+function loaded () {
+		myScroll = new IScroll('#listview', { mouseWheel: false, tap: true, bounce:true, click: true
+		});
+	//	myScroll2 = new IScroll('#panel_setting', { mouseWheel: false, tap: true, bounce:true, click: true
+		//});
+		
+		
+		
+		if(get_scrollheight()=='0' ||get_scrollheight()==''|| get_scrollheight()==undefined || get_scrollwrapperheight()=='0' || get_scrollwrapperheight()=='' || get_scrollwrapperheight()==undefined || store_scrollerheight()=='0' || store_scrollerheight()=='' || store_scrollerheight()==undefined){
+			store_scrollheight();
+			store_scrollwrapperheight();
+			store_scrollerheight();
+		}
+		myScroll.maxScrollY=get_scrollheight();
+		myScroll.wrapperHeight=get_scrollwrapperheight();
+		myScroll.scrollerHeight=get_scrollerheight();
+		
+		myScroll.on('scrollEnd', function () {
+			if(this.maxScrollY=='0' || this.maxScrollY=='' || this.maxScrollY==undefined || this.wrapperHeight=='0' || this.wrapperHeight=='' || this.wrapperHeight==undefined || this.scrollerHeight=='0' || this.scrollerHeight=='' || this.scrollerHeight==undefined){
+				this.maxScrollY=get_scrollheight();
+				this.wrapperHeight=get_scrollwrapperheight();
+				this.scrollerHeight=get_scrollerheight();
+				this.refresh();
+			}
+		});
+		/*
+		myScroll2.maxScrollY=get_scrollheight();
+		myScroll2.wrapperHeight=get_scrollwrapperheight();
+		myScroll2.scrollerHeight=get_scrollerheight();
+		
+		myScroll2.on('scrollEnd', function () {
+			if(this.maxScrollY=='0' || this.maxScrollY=='' || this.maxScrollY==undefined || this.wrapperHeight=='0' || this.wrapperHeight=='' || this.wrapperHeight==undefined || this.scrollerHeight=='0' || this.scrollerHeight=='' || this.scrollerHeight==undefined){
+				this.maxScrollY=get_scrollheight();
+				this.wrapperHeight=get_scrollwrapperheight();
+				this.scrollerHeight=get_scrollerheight();
+				this.refresh();
+			}
+		});*/
+		
+}
+
+
+$('#listview').on('touchmove', function (e) {
+     e.stopPropagation();
+});	
+/*
+$('#panel_setting').on('touchmove', function (e) {
+     e.stopPropagation();
+});
+*/
+  </script>
+ </head>
+
+ <body id="afui" onLoad="loaded()">
+ 
+
+
+
+
+
+  <!-- content goes here-->
+  <div class="uwrap" id="content">
+   <div class="upage panel" id="mainpage" data-header="af-header-0" data-footer="af-footer-0">
+    <div class="upage-outer">
+     <header class="container-group inner-element uib_w_1" data-uib="app_framework/header" data-ver="0" id="af-header-0">
+      <h1>sZ Quiz Love Free</h1>
+      <div class="widget-container wrapping-col single-centered"></div>
+      <div class="widget-container content-area horiz-area wrapping-col left"></div>
+      <div class="widget-container content-area horiz-area wrapping-col right"></div>
+     </header>
+     
+      <div id="tab1_page" class="upage-content">
+
+<div class="grid urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+<div class="panel2" title="Title" id="listview" data-footer="none" selected="true"><ul class="list"></ul>
+        </div>        
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>     
+     </div>
+     
+     
+     <!-- /upage-content -->
+     
+     <div id="tab2_page" class="upage-content">
+
+<div class="grid urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+<div class="panel3" title="Title" id="panel_setting" data-footer="none" selected="false">
+
+   <ul>
+   <li>
+           <span class="span_language">Language:</span>
+       </li>
+       <li>
+           <input type="radio" name="language" id="lang_eng" value="eng"/><label onClick="change_language('eng');" for="lang1">English</label>
+           <input type="radio" name="language" id="lang_ind" value="ind"/><label onClick="change_language('ind');" for="lang2">Indonesian</label>
+         </li>
+         </ul>
+
+         
+        </div>        
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+     </div>
+     
+
+
+<div id="tab3_page" class="upage-content">
+
+<div class="grid urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+       <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+        <div class="widget-container content-area vertical-col">
+<div class="panel4" title="Title" id="panel_about" data-footer="none" selected="false">
+       <ul id="text_about">
+       <li>
+       <p>sZ Quiz Love Free</p>
+           <p>Love is the most beautiful thing in this world. We can't see and touch Love, but we can feel and understand Love. sZ Quiz Love is a simple but fun way to understand Love.</p> <p>Offline Love quizzes available whenever you need them and will be updated regularly.</p> 
+           <p></p>
+           <p>Wish you love this app. Please feel free to contact me anytime.</p>  
+           <p>&raquo; Website: zeneqy.com<br>
+&raquo; Instagram: zeneqy
+</p><p>Thank you, <br> <font color="#FFFF00">Zeneqy</font></p></li><li class="extra_below"></li>
+       </ul>
+          
+         </div>
+        </div>        
+         <span class="uib_shim"></span>
+        </div>
+       </div>
+       <span class="uib_shim"></span>
+      </div>
+
+
+     <footer class="inner-element uib_w_3" data-uib="app_framework/footer" data-ver="0" id="af-footer-0"><a class="widget uib_w_6 d-margins icon heart"
+      data-uib="app_framework/button" data-ver="0" id="tab1">Scrolls</a><a class="widget uib_w_4 d-margins icon settings"
+      data-uib="app_framework/button" data-ver="0" id="tab2">Settings</a><a class="widget uib_w_7 d-margins icon user"
+      data-uib="app_framework/button" data-ver="0" id="tab3">About</a>
+     </footer>
+    </div>
+    <!-- /upage-outer -->
+
+   </div>
+
+   <!-- /upage -->
+
+<!-- list details begin-->
+<script>
+for(var bb=0;bb<byk_quest;bb++){
+					bbc=bb+1;
+					li_content='<div class="upage panel" id="item'+bbc+'_page" data-header="af-header-'+bbc+'" data-footer="none"><div class="upage-outer"><header class="container-group inner-element uib_w_14" data-uib="app_framework/header" data-ver="0" id="af-header-'+bbc+'"><h1>sZ Quiz Love Free</h1><div class="widget-container wrapping-col single-centered"></div><div class="widget-container content-area horiz-area wrapping-col left with-back"><a class="button" id="backButton">Back</a></div><div class="widget-container content-area horiz-area wrapping-col right"></div></header><div id="item'+bbc+'_pagesub" class="upage-content"><div class="wrapper_bbc"><div id="div_questions'+bbc+'" class="div_quest"></div><div id="wrapper'+bbc+'"><ul id="ul_questions'+bbc+'" class="ul_questions"></ul></div><div id="result'+bbc+'" class="result"></div><div align="center" id="btntry_href'+bbc+'"><a href="#item'+bbc+'_page" onClick="reset_result(\''+bbc+'\');create_questions(\''+bbc+'\',$(this).offset().top,\''+get_language()+'\');"><input id="btn_reset'+bbc+'" name="Repeat" type="button" value="'+get_buttontry_name(get_language())+'" class="button"></a></div><input type="hidden" id="score'+bbc+'" name="score'+bbc+'" class="score" value="0"><div id="adv_score'+bbc+'" class="result"></div></div></div></div></div>';
+					
+					document.write(li_content);
+					var result_id='#result'+bbc;
+		if(get_localstorage_data(bbc)!=undefined && get_localstorage_data(bbc)!='') {
+					$(result_id).html(get_localstorage_data(bbc)).show();
+		}
+}
+</script>
+<!-- list details end-->
+
+
+  </div>
+  <!-- /uwrap -->
+  
+<script>
+function change_language(lang){
+	switch(lang){
+	case 'ind':
+		$('#tab1').html('Kuis');
+		$('#tab1_page h1').html('Kuis');
+		$('#tab2').html('Atur');
+		$('#tab2_page h1').html('Atur');
+		$('#tab3').html('Hubungi');
+		$('#tab3_page h1').html('Hubungi');
+		$('#tab2_page .span_language').html('Bahasa:');
+	break;
+	case 'eng':
+		$('#tab1').html('Scrolls');
+		$('#tab1_page h1').html('Scrolls');
+		$('#tab2').html('Settings');
+		$('#tab2_page h1').html('Settings');
+		$('#tab3').html('About');
+		$('#tab3_page h1').html('About');
+		$('#tab2_page .span_language').html('Language:');
+	break;
+	}
+	radio_id ='#lang_'+lang;
+	$(radio_id).prop("checked", true);
+	localStorage.language=lang;
+	change_questions_list();
+}
+
+function prevpostop(){
+var pos_top=$('#prevpostop').val();
+$('#afui').scrollTop(0);
+}
+function load_questions_list() {
+	var lang = get_language();
+	var dir_lang='js/datas/'+lang+'/questions_list.js';
+	var new_content='';
+	$.getScript(dir_lang, function() {
+		for(var c=0;c<byk_quest;c++){	
+		var c_id=c+1;
+		var af_header='#af-header-'+c_id+' h1';
+		new_content ='<li onClick="$(this).css(\"backgroundColor\",\"purple\");"  id="quesl_'+c_id+'"><a href="#item'+c_id+'_page" onClick="create_questions(\''+c_id+'\',$(this).offset().top,\''+lang+'\');">'+questions[c]+'</a></li>';
+		$('#listview .list').append(new_content);
+			if(get_localstorage_data(c_id)!=undefined && get_localstorage_data(c_id)!='') {
+				var quesl_id='#quesl_'+c_id+' a';
+				$(quesl_id).css('text-decoration','line-through');
+			}
+		}
+		var extra_li='<li style="border:0px solid blue;height:20px;"></li>';
+		$('#listview .list').append(extra_li);
+	});
+}
+function change_questions_list() {
+	var lang = get_language();
+	var dir_lang='js/datas/'+lang+'/questions_list.js';
+	var new_content='';
+	$.getScript(dir_lang, function() {
+		for(var c=0;c<byk_quest;c++){	
+		var c_id=c+1;
+		new_content ='<a href="#item'+c_id+'_page" onClick="create_questions(\''+c_id+'\',$(this).offset().top,\''+lang+'\');">'+questions[c]+'</a>';
+		var li_id='#quesl_'+c_id;
+		$(li_id).html(new_content);
+			if(get_localstorage_data(c_id)!=undefined && get_localstorage_data(c_id)!='') {
+				var quesl_id='#quesl_'+c_id+' a';
+				$(quesl_id).css('text-decoration','line-through');
+			}
+		}
+	});
+}
+function create_questions(no,pos_top,lang){
+	var a=0;
+	if(no>byk_quest)return;
+	clear_panel(no,'notall');
+	if(get_localstorage_data(no)!=undefined && get_localstorage_data(no)!='') {
+			reset_ul_question_height(no,0);
+			var dir_lang='js/datas/'+lang+'/questions_list.js';
+			$.getScript(dir_lang, function() {
+				var q_no=no-1;
+				var div_questions_id='#div_questions'+no;
+				var question_title='<p><h3 id="h3_question_title">'+questions[q_no]+'</h3></p>';
+				$(div_questions_id).html(question_title);
+			});
+			get_review(no);
+			var btn_label=get_buttontry_name(lang);
+			val_btn='<a href="#item'+no+'_page" onClick="reset_result(\''+no+'\');create_questions(\''+no+'\',$(this).offset().top,\''+lang+'\');"><input id="btn_reset'+no+'" name="Repeat" type="button" value="'+btn_label+'" class="button"></a>';
+			$('#btntry_href'+no).html(val_btn);
+			$('#btn_reset'+no).fadeIn(1000);
+			return;
+	}
+	var window_height=get_window_height()-40;
+	reset_ul_question_height(no,window_height);
+	var btn_label=get_buttontry_name(lang);
+	$('#btn_reset'+no).val(btn_label);		
+	$('#btn_reset'+no).hide();
+	var quesl_id='#quesl_'+no+' a';
+	$(quesl_id).css('text-decoration','none');
+	quiz_file = 'quiz'+no;
+	quiz_file_js='js/datas/'+lang+'/'+quiz_file+'.js';
+	var div_questions_id='#div_questions'+no;
+	var question_title='<p><h3 id="h3_question_title">'+questions[no-1]+'</h3></p>';
+	$(div_questions_id).html(question_title);
+	$.getScript(quiz_file_js, function() {
+				switch(parseInt(no)){
+				case 27:
+				case 45:
+				case 46:
+				break;
+				default:
+					quiz = randQuiz(quest,quiz);
+				}
+				var tblsz = quiz.length;
+				for (var i=0;i<tblsz;i++) {
+					 var a = i +1;
+					 q_id='q'+no+'_'+a;
+					 q_no_id='q_no'+no+'_'+a;
+					 radio_id=no+'_'+a+'_';
+					 var k;
+					 var f = quiz[i].split('~');
+ 					 var poin = point[i].split('~');
+					 new_content='<li id="'+q_id+'" id="'+q_id+'" class="questions"><span class="questions_no">Question '+a+' of '+tblsz+'</span><br/><br/>'+f[1];
+					 if(poin[1]!=undefined && poin[1]!='' && f[2]!=undefined)new_content+='<input type="radio" name="'+radio_id+'1'+'" id="'+radio_id+'1" value="'+poin[1]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[1]+');" for="'+radio_id+'1">'+f[2]+'</label><br />';
+					 if(poin[2]!=undefined && poin[2]!='' && f[3]!=undefined)new_content+='<input type="radio" name="'+radio_id+'2'+'" id="'+radio_id+'2" value="'+poin[2]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[2]+');" for="'+radio_id+'2">'+f[3]+'</label><br />';
+					 
+					  if(poin[3]!=undefined && poin[3]!='' && f[4]!=undefined) new_content+='<input type="radio" name="'+radio_id+'3'+'" id="'+radio_id+'3" value="'+poin[3]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[3]+');" for="'+radio_id+'3">'+f[4]+'</label><br />';
+					  if(poin[4]!=undefined && poin[4]!='' && f[5]!=undefined) new_content+='<input type="radio" name="'+radio_id+'4'+'" id="'+radio_id+'4" value="'+poin[4]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[4]+');" for="'+radio_id+'4">'+f[5]+'</label><br />';
+					   if(poin[5]!=undefined && poin[5]!='' && f[6]!=undefined) new_content+='<input type="radio" name="'+radio_id+'5'+'" id="'+radio_id+'5" value="'+poin[5]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[5]+');" for="'+radio_id+'5">'+f[6]+'</label><br />';
+					   if(poin[6]!=undefined && poin[6]!='' && f[7]!=undefined) new_content+='<input type="radio" name="'+radio_id+'6'+'" id="'+radio_id+'6" value="'+poin[6]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[6]+');" for="'+radio_id+'6">'+f[7]+'</label><br />';
+					   if(poin[7]!=undefined && poin[7]!='' && f[8]!=undefined) new_content+='<input type="radio" name="'+radio_id+'7'+'" id="'+radio_id+'7" value="'+poin[7]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[7]+');" for="'+radio_id+'7">'+f[8]+'</label><br />';
+					   if(poin[8]!=undefined && poin[8]!='' && f[9]!=undefined) new_content+='<input type="radio" name="'+radio_id+'8'+'" id="'+radio_id+'8" value="'+poin[8]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[8]+');" for="'+radio_id+'8">'+f[9]+'</label><br />';
+					   if(poin[9]!=undefined && poin[9]!='' && f[10]!=undefined) new_content+='<input type="radio" name="'+radio_id+'9'+'" id="'+radio_id+'9" value="'+poin[9]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[9]+');" for="'+radio_id+'9">'+f[10]+'</label><br />';
+					   if(poin[10]!=undefined && poin[10]!='' && f[11]!=undefined) new_content+='<input type="radio" name="'+radio_id+'10'+'" id="'+radio_id+'10" value="'+poin[10]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[10]+');" for="'+radio_id+'10">'+f[11]+'</label><br />';
+					   if(poin[11]!=undefined && poin[11]!='' && f[12]!=undefined) new_content+='<input type="radio" name="'+radio_id+'11'+'" id="'+radio_id+'11" value="'+poin[11]+'"/><label onClick="processAnswer(\''+lang+'\','+no+','+quest+','+a+','+poin[11]+');" for="'+radio_id+'11">'+f[12]+'</label><br />';
+					new_content+='</li>';
+					var ul_questions_id='#ul_questions'+no;
+					$(ul_questions_id).append(new_content);
+					if (a > 1){
+						$('#'+q_id).hide();
+						$('#'+q_no_id).hide();
+					}
+				}
+				
+        	});	
+
+}
+change_language(get_language());
+load_questions_list();
+set_default_checked_language();
+set_div_height_tab_others();
+if(get_fresh()=='0'){
+	default_settings_values();
+	location.reload();
+} else {
+	new_settings_values();
+}
+initApp();  
+</script>
+ </body>
+
+</html>

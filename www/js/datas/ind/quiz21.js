@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu pernah pacaran?~Ya.~Tidak.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~Kamu sangat selektif dalam memilih pacar (ingin yang sempurna)?~Ya.~Tidak.');
+point[o++] =('2~10~0');
+quiz[r++] =('3~Jika ada cewek/cowok yang pedekate. Kamu:~Ya.~Tidak.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~Menurutmu sulit untuk menemukan pasangan yang tepat?~Ya.~Tidak.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~Kamu merasa risih dengan adegan mesra/intim di TV?~Ya.~Tidak.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~Kamu sering merasa kesepian karena tak punya pacar?~Ya.~Tidak.');
+point[o++] =('6~10~0');
+quiz[r++] =('7~Kamu mudah sekali jatuh Cinta?~Ya.~Tidak.');
+point[o++] =('7~10~0');
+quiz[r++] =('8~Kamu merasa diri "tak berguna", jika jomblo dalam waktu yang lama?~Ya.~Tidak.');
+point[o++] =('8~10~0');
+quiz[r++] =('9~Hal-hal kecil/sederhana dapat membuatmu gembira?~Ya.~Tidak.');
+point[o++] =('9~10~0');
+quiz[r++] =('10~Kamu tak tahu pria/wanita seperti apa yang kamu sukai?~Ya.~Tidak.');
+point[o++] =('10~10~0');

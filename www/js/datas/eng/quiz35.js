@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Which one is your character in a relationship?~Submissive.~Organized, but also not too strict.~Relaxed.');
+point[o++] =('1~0~1~2');
+quiz[r++] =('2~What your role in a relationship?~"Slave"--you\'ll do whatever he/she wants to.~"King/queen".~You and him/her are equal.');
+point[o++] =('2~2~0~1');
+quiz[r++] =('3~Does fighting with boy/girlfriend hurt your feelings?~Yes. You are very sensitive.~Not at all. You\'re strong.~Yes sometimes.');
+point[o++] =('3~2~0~1');
+quiz[r++] =('4~How often you share fantasy with your partner?~Never.~Occasionally.~All the time.');
+point[o++] =('4~0~1~2');
+quiz[r++] =('5~In the beginning of new relationship, you:~Aggresive.~Shy.~Careful.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~What should you do to heat up a your relationship?~Do anything to satisfy him/her.~Loyal and honest to your partner.~Independent.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Do you agree--to not share your secret with your partner (and this is just a small secret that won\'t harm your relationship)?~Yes, he/she will be more curious about you.~Yes agree. Everyone has their own privacy.~Not agree, there should be no secret between you and your partner.');
+point[o++] =('7~1~2~0');
+quiz[r++] =('8~What you\'d like to do on a date?~Clubbing until late morning.~Having dinner and watching DVD at home with your boy/girlfriend.~Watching romantic movie at the cinema.');
+point[o++] =('8~0~2~1');
+quiz[r++] =('9~What attracts you to the opposite sex?~A sensitive and caring person.~Someone who can protect you.~Someone who can fulfill all your needs.');
+point[o++] =('9~1~2~0');
+quiz[r++] =('10~What you love motto?~Give selflessly love.~Give love as much as he/she gives you.~Give enough attention in order he/she doesn\'t whine.');
+point[o++] =('10~2~1~0');

@@ -1,0 +1,21 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 7;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~How does he/she treat you?~Lots of laugh and smile.~Looks bored.~Nervous.~Jokes with you all the time.~Relaxed.');
+point[o++] =('1~5~0~4~3~2');
+quiz[r++] =('2~Where/how he/she wants to touch you?~Arms.~A brief hug.~Never done it.~Pat you on the back/shoulders.~Pat you on the back and tell you a joke to make you laugh.');
+point[o++] =('2~5~4~0~1~2');
+quiz[r++] =('3~What does his/her breath smell like?~Never noticed it.~Smells so bad.~Fresh.~Smells like bubble gum.~Smells strange.');
+point[o++] =('3~0~0~5~3~0');
+quiz[r++] =('4~What does he/she like to talk about?~About him/herself.~About you.~About sports (or his hobbies).~He/she speaks (anything) in a soft tone to you.~She\'s interested in what you\'re saying.');
+point[o++] =('4~0~5~0~4~3');
+quiz[r++] =('5~When you both are talking, what he/she sees:~Your eyes.~His/your shoes.~His/her watches.~Your lips/mouth.~Around, don\'t pay attention to you.');
+point[o++] =('5~3~1~0~5~0');
+quiz[r++] =('6~How does he/she sit when you and him/her are having a talk?~He/she leans forward/sits closer to you.~Leans back in the seat and crosses his/her arms and legs.~Sits upright and listens to you seriously.~Nervous.~Relaxed.');
+point[o++] =('6~5~0~3~4~1');
+quiz[r++] =('7~When you both are about to sit, He/she:~Sits closer to you.~Keeps his/her distance.~Sits next to you, but puts his/her bag in the middle of the two of you.~He/she sits across the table from you.~He/she sits as far possible from you.');
+point[o++] =('7~5~4~2~0~0');

@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Do you like flirting?~Never.~Always.~Sometimes.');
+point[o++] =('1~0~2~1');
+quiz[r++] =('2~If you like someone, how do you show that you like him/her?~Agresively.~Slowly, but surely.~Quickly but carefully.');
+point[o++] =('2~0~2~1');
+quiz[r++] =('3~What is the best way to spend the night with your partner?~Watch DVDs at home.~Dinner out.~Party and meet many people.');
+point[o++] =('3~1~2~0');
+quiz[r++] =('4~What is your main allure?~Physical (cute/cool).~Intelligence.~Personality.');
+point[o++] =('4~2~1~0');
+quiz[r++] =('5~What do you think such a nice evening?~Creative and unique.~Quite and romantic.~Classic and safe.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~It takes time before you really open up to a new friend, but you don\'t mind if he/she\'s so curious about you?~True!~Partly true!~Wrong!');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Who has bigger role in a relationship?~Your partner.~You.~You both.');
+point[o++] =('7~0~0~2');
+quiz[r++] =('8~How fast can you fall in Love?~So slow.~So fast.~Depends on situations.');
+point[o++] =('8~2~0~1');
+quiz[r++] =('9~What personality traits do you like in the opposite sex?~Financially success.~Idealist and willing to create a better world.~Family/friends are his/her first priority.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~Do you think your partner should be also your best friend?~Sometimes, you are more open to your friend than your partner.~Nope, partner and best friend are two different things.~Yes, she/he should!');
+point[o++] =('10~1~0~2');

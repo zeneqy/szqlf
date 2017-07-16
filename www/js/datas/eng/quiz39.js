@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~If you and your partner have a fight, you:~Keep calm and positive.~Get angry easily, but you will soon realize your fault and ask him/her to forgive you.~It\'s not your fault.');
+point[o++] =('1~2~1~0');
+quiz[r++] =('2~How long you should wait to get intimate with your new boy/girlfriend?~As soon as possible.~A couple days.~A very long time.');
+point[o++] =('2~0~1~2');
+quiz[r++] =('3~If you are in Love. You:~You can do anything for the one you Love.~Your love--Easy comes, easy go.~Will be careful, you don\'t want to choose the wrong partner.');
+point[o++] =('3~2~0~1');
+quiz[r++] =('4~You\'ll do anything for a lasting relationship?~Nope. Let it flows like a river.~True! Love and efforts are same important.~Depends on the situations.');
+point[o++] =('4~0~2~1');
+quiz[r++] =('5~Do you always depend on your boy/girlfriend?~Never. You\'re very independent.~True. You can\'t live without him/her.~Yes, sometimes.');
+point[o++] =('5~2~0~1');
+quiz[r++] =('6~What is perfect match to you?~He/she can decide what is the best for you.~You always can count on him/her and he/she supports you.~Protective but full of attention.');
+point[o++] =('6~0~2~1');
+quiz[r++] =('7~What factor can make you like/Love him/her?~Honest and straight forward.~Aggressive.~Smart.');
+point[o++] =('7~0~0~2');
+quiz[r++] =('8~How do you approach someone you like?~You focus to only date a guy/girl you like, until either you get him/her or get rejected.~Date several guys/girls at the same time.~You focus to only date a guy/girl you like, but if there\'s more attractive guy/girl than him/her, you move on to better target.');
+point[o++] =('8~2~0~1');
+quiz[r++] =('9~How long will it take for you to make a decision?~Quickly.~It takes a long time for you to make a decision.~Quite fast.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~A guy/girl you like is standing in front of you. You:~Approach him/her and try to make friends.~Flirt at him/her.~Wish he/she will come to you.');
+point[o++] =('10~1~0~2');

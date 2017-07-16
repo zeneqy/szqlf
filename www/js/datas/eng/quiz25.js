@@ -1,0 +1,21 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 7;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~You have a date in a famous restaurant. Your dating partner will pay for dinner. What your orders?~The most expensive dish on the menu.~Let him/her choose the dish for you.~The dish that you like (and it has reasonable price).');
+point[o++] =('1~3~1~2');
+quiz[r++] =('2~If you both are talking about Ex, what do you want know about his/her Ex?~Anything interesting they\'ve done together.~Reluctant to talk about his/her Ex. The past is the past, just forget it and move on.~You want to know how they broke up, which makes you better understand--what type of guy/girl is he/she.');
+point[o++] =('2~1~2~3');
+quiz[r++] =('3~A stranger suddenly sits at your table. You\'re waiting a friend who is always late. This guy/girl is cute. You:~Don\'t mind as long as he/she is polite/nice.~Very unhappy and tell him/her to go away.~Welcome him/her, even you don\'t mind when he/she tries getting intimate with you.');
+point[o++] =('3~2~3~1');
+quiz[r++] =('4~This stranger (question 3) insists on getting your phone number. You let him/her know your number. But after a week later, he/she doesn\'t call you yet. What do you think about this?~Maybe he/she lost your number.~You call him/her instead of waiting for him/her to call you.~You purposely gave him the wrong number.');
+point[o++] =('4~2~1~3');
+quiz[r++] =('5~At a party, you are attracted to a guy/girl. He/she is talking with his/her friends, ocasionally glances at you. How do you response this?~You think he/she is also attracted to you. You wink at him/her.~You think if he/she is also attracted to you, so why not come and say Hi.~He/she looks for your attention. You dislike this type of guy/girl.');
+point[o++] =('5~1~2~3');
+quiz[r++] =('6~You\'ve been really late for a date. How do you apologize to him/her?~You say really sorry and ask him/her if he/she doesn\'t mind to reschedule date.~You think it\'s not your fault, so don\'t have to apologize.~Instead of just saying sorry, you give him/her a gift that he/she really likes.');
+point[o++] =('6~2~3~1');
+quiz[r++] =('7~You see someone you like is talking with another guy/girl. They look very close to each other. How do you response this?~Think there\'s nothing wrong with this. After all you are no more than just a friend to him/her.~You say to yourself that you are unafraid to compete with this other guy/girl.~You don\'t want to see him/her anymore. He/she doesn\'t worth you.');
+point[o++] =('7~2~1~3');

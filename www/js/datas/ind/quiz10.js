@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Saat bertengkar, kalian tak merendahkan/menghina satu sama lain?~Ya.~Tidak.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~Apa kalian saling tertarik satu sama lain?~Ya.~Tidak.');
+point[o++] =('2~10~0');
+quiz[r++] =('3~Kalian perduli dengan perasaan masing-masing?~Ya.~Tidak.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~Kalian senang berdiskusi/bertukar pikiran?~Ya.~Tidak.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~Sebelum memutuskan suatu hal penting, dia selalu menanyakan pendapatmu?~Ya.~Tidak.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~Apa dia sering cuek padamu, atau abai terhadap pendapatmu?~Ya.~Tidak.');
+point[o++] =('6~0~10');
+quiz[r++] =('7~Jika berdebat/bertengkar (hebat), sering berlangsung lama?~Ya.~Tidak.');
+point[o++] =('7~0~10');
+quiz[r++] =('8~Apa kalian mesra satu sama lain?~Ya.~Tidak.');
+point[o++] =('8~10~0');
+quiz[r++] =('9~Apa setiap keputusan harus melibatkan dirimu?~Ya.~Tidak.');
+point[o++] =('9~0~10');
+quiz[r++] =('10~Apa kalian merasa lebih bahagia daripada saat masih single/jomblo?~Ya.~Tidak.');
+point[o++] =('10~10~0');

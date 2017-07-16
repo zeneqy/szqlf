@@ -1,0 +1,21 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 7;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu sedang jalan berduaan sama cowok/cewek beken di sebuah ruang publik. Orang-orang mulai berkomentar tentang kamu. Kamu:~“Aduh mak! Mending gue pulang aja deh!”~Sedikit risih, tapi berusaha agar tetap santai.~“Asyik nih, gue jadi ikutan beken!” kamu sangat menikmati.');
+point[o++] =('1~1~2~3');
+quiz[r++] =('2~Ada jerawat gede banget di mukamu. Kamu:~Santai aja. Gak perlu dipikirin, besok-besok juga ilang.~Kamu kasih make up tebel biar jerawat tak terlalu terlihat.~Malas kemana pun saat ini.');
+point[o++] =('2~3~2~1');
+quiz[r++] =('3~Kalau mau berpergian, seberapa susah kamu pilih pakaian?~Suka stres, karena tak pede dengan tubuh sendiri.~Cari baju yang bisa bikin penampilan kamu tampak lebih baik.~Tak pernah merasa kesusahan pilih baju. Kamu nyaman dengan baju apa pun yang kamu pakai.');
+point[o++] =('3~1~2~3');
+quiz[r++] =('4~Secara tiba-tiba, gebetan yang sudah lama kamu suka, kasih pujian, “Kamu makin keren/canti!” Apa reaksimu:~Menduga pasti Dia sedang bercanda.~Menghargai dan bilang, “Terimakasih atas pujiannya.”~Kaget dan GeEr (gede rasa) berat. Nyaris tak bisa berkata-kata.');
+point[o++] =('4~1~3~2');
+quiz[r++] =('5~Jika kamu boleh operasi plastik gratis. Bagian tubuh mana yang bakal kamu permak?~“Dari ujung rambut hingga ujung kaki. Kalau perlu dibikin mirip artis terkenal!”~“Nggak deh, terimakasih! Gue dah puas sama diri yang sekarang!”~“Gigi. Gue pengen punya gigi sempurna.”');
+point[o++] =('5~1~3~2');
+quiz[r++] =('6~Alasan kamu fitnes?~“Biar sehat dan menurutku fitnes itu menyenangkan.”~“Terpaksa. Soalnya kalau gak fitnes, gue "ancur" banget!”~“Tadinya coba-coba fitnes selama beberapa hari, terus teman bilang gue makin oke. Jadi keterusan sampai sekarang.”');
+point[o++] =('6~3~1~2');
+quiz[r++] =('7~Bagian tubuhmu yang paling menarik?~“Gak ada!”~“Mata/bibir/Hidung kali yah?”~“Semuanya menarik!”');
+point[o++] =('7~1~2~3');

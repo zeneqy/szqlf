@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Menurutmu, pasangan ideal itu seperti apa?~Penurut.~Dominan.~Setara dengan dirimu.');
+point[o++] =('1~0~2~1');
+quiz[r++] =('2~Keseimbangan dan keharmonisan sangat penting dalam suatu hubungan?~Tidak sama sekali!~Betul, sangat penting!~Penting, tapi masih banyak faktor lain yang lebih penting.');
+point[o++] =('2~0~2~1');
+quiz[r++] =('3~Apa kamu perduli dengan perkataan mantanmu?~Tak perduli.~Iya, kamu harus melakukan intropeksi diri.~Jika kalian masih berteman, kamu akan mempertimbangkan perkataan mantanmu, tapi jika sudah tak berteman, kenapa kamu harus perduli?');
+point[o++] =('3~0~2~1');
+quiz[r++] =('4~Jika kalian bertengkar, kamu:~Kehilangan kendali.~Berusaha tenang dan tak marah-marah.~Tunggu hingga kalian berdua tenang, baru menyampaikan hal yang perlu dikatakan.');
+point[o++] =('4~0~2~1');
+quiz[r++] =('5~Apa pendapatmu jika kamu dan pasangan saling menggoda?~Menyenangkan.~Kekanak-kanakan.~Boleh saja, jika sedang mood.');
+point[o++] =('5~2~0~1');
+quiz[r++] =('6~Hal yang seharusnya tak terjadi dalam suatu hubungan?~Ketidaksepahaman.~Kebohongan.~Kelakuan buruknya.');
+point[o++] =('6~1~2~0');
+quiz[r++] =('7~Menurutmu, kencan yang asyik itu seperti apa?~Pesta dan bertemu banyak orang.~Malam malam romantis di rumah.~Makan malam romantis di restoran favorit.');
+point[o++] =('7~2~0~1');
+quiz[r++] =('8~Apa perananmu dalam hubungan kalian?~Kadang dominan, kadang penurut.~Penurut.~Dominan.');
+point[o++] =('8~2~0~0');
+quiz[r++] =('9~Apa kamu percaya diri tanpa makeup?~lihat situasi dulu.~Tidak!~Ya!.');
+point[o++] =('9~1~0~2');
+quiz[r++] =('10~Kamu suka bunga, atau benda-benda indah?~Ya, kamu punya selera bagus.~Kadang-kadang.~Tidak, kamu lebih suka uang.');
+point[o++] =('10~2~1~0');

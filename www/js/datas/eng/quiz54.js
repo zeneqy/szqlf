@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~You are always on the list to be part of any events?~Yes.~No.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~You don\'t want to depend on others?~Yes.~No.');
+point[o++] =('2~0~10');
+quiz[r++] =('3~Your friends often ask your opinions?~Yes.~No.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~Your friends share everything to you?~Yes.~No.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~Friends will always be there for you (in good and hard times)?~Yes.~No.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~Do you take it seriously, if someone mocks you?~Yes.~No.');
+point[o++] =('6~0~10');
+quiz[r++] =('7~Do you active at social activities?~Yes.~No.');
+point[o++] =('7~10~0');
+quiz[r++] =('8~Most of your friends are friends of friends?~Yes.~No.');
+point[o++] =('8~0~10');
+quiz[r++] =('9~You choose a friend who has anything in common with you?~Yes.~No.');
+point[o++] =('9~0~10');
+quiz[r++] =('10~Almost everybody shows up (eg at your birthday party), because they care for you?~Yes.~No.');
+point[o++] =('10~10~0');

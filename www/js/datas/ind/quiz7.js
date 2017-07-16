@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Seberapa sering pasanganmu bilang, “Kamu selalu sibuk sendiri.”?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('1~10~5~0');
+quiz[r++] =('2~Seberapa sering kamu menceritakan masalah hubunganmu dan Dia kepada orang lain?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('2~10~5~0');
+quiz[r++] =('3~Seberapa sering kamu mengabaikan nasehat Dia?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('3~10~5~0');
+quiz[r++] =('4~Seberapa sering kamu mendiamkan masalah sehingga (masalah tersebut) jadi besar?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('4~10~5~0');
+quiz[r++] =('5~Seberapa sering kamu ingin tahu rahasia Dia (sekalipun Dia tak ingin memberitahumu)?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('5~10~5~0');
+quiz[r++] =('6~Seberapa sering kamu ingin tahu masalah yang Dia hadapi (sekalipun Dia tak ingin memberitahumu)?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('6~10~5~0');
+quiz[r++] =('7~Seberapa sering Dia menyalahkan orang lain atas masalah yang Dia hadapi?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('7~10~5~0');
+quiz[r++] =('8~Seberapa sering Dia memutuskan hal penting secara sepihak?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('8~10~5~0');
+quiz[r++] =('9~Seberapa sering Dia memaksakan pendapatnya?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('9~10~5~0');
+quiz[r++] =('10~Seberapa sering kamu pikir bahwa kalian tak cocok?~Kadang-kadang.~Cukup sering.~Sering sekali.');
+point[o++] =('10~10~5~0');

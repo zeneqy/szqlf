@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~You think, he/she is always busy with him/herself?~Yes.~No.');
+point[o++] =('1~0~10');
+quiz[r++] =('2~He/she rarely starts the conversation?~Yes.~No.');
+point[o++] =('2~0~10');
+quiz[r++] =('3~He/she pretends, not to hear you?~Yes.~No.');
+point[o++] =('3~0~10');
+quiz[r++] =('4~He/she likes hearing you talk (for hours)?~Yes.~No.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~You always share everything with him/her?~Yes.~No.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~He/she helps you solving your problems?~Yes.~No.');
+point[o++] =('6~10~0');
+quiz[r++] =('7~Do you think he/she is stubborn?~Yes.~No.');
+point[o++] =('7~0~10');
+quiz[r++] =('8~He/she cuts in the middle of conversation?~Yes.~No.');
+point[o++] =('8~0~10');
+quiz[r++] =('9~He/she often doesn\'t have time to hear your talk?~Yes.~No.');
+point[o++] =('9~0~10');
+quiz[r++] =('10~He/she always doesn\'t want listen to you?~Yes.~No.');
+point[o++] =('10~0~10');

@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~You "report" everything (about your activities) to him/her, even though he/she doesn\'t ask you to?~Yes.~No.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~You think he/she is more important than your family/friends?~Yes.~No.');
+point[o++] =('2~10~0');
+quiz[r++] =('3~If you don\'t hear from her in 24 hrs, you can\'t stop fretting?~Yes.~No.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~You decide not to study abroad (even if you have scholarship), as long as you can always be with him/her?~Yes.~No.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~If possible, 24/7 you want him/her is within your sight. Even you wanna know--what he/she dreams about while he/she\'s sleeping?~Yes.~No.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~You can\'t be happy without him/her being next to you?~Yes.~No.');
+point[o++] =('6~10~0');
+quiz[r++] =('7~You are afraid if you\'re too far from him/her, will ruin your relationship?~Yes.~No.');
+point[o++] =('7~10~0');
+quiz[r++] =('8~You will do anything for him/her?~Yes.~No.');
+point[o++] =('8~10~0');
+quiz[r++] =('9~You go to the same school, office, gym, so on in order to be always with him/her?~Yes.~No.');
+point[o++] =('9~10~0');
+quiz[r++] =('10~He/she is gone for less than twenty-four hours and you already miss him/her?~Yes.~No.');
+point[o++] =('10~10~0');

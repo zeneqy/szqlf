@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu tak memotong pembicaraan jika Dia masih belum selesai bicara?~Ya.~Tidak.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~Kalian tak pernah kehabisan bahan obrolan?~Ya.~Tidak.');
+point[o++] =('2~10~0');
+quiz[r++] =('3~Kamu serius menanggapi, jika pacarmu butuh curhat. Misal:tak mengejek, atau mentertawakan kesialannya?~Ya.~Tidak.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~Kamu merasa senang tak harus mendengarkan pacarmu curhat/bercerita?~Ya.~Tidak.');
+point[o++] =('4~0~10');
+quiz[r++] =('5~Biar pun membosankan, kamu tak keberatan mendengar dia bicara?~Ya.~Tidak.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~Ketika kamu sedang asik nonton film seri kesayanganmu. Tiba-tiba pacarmu datang dan curhat. Kamu:~Lanjutin nonton acara tersebut, tapi sambil dengar curhatan pacarmu.~Matiin TV dan siap mendengar apa yang ingin disampaikan pacarmu.');
+point[o++] =('6~0~10');
+quiz[r++] =('7~Apa kamu keras kepala?~Ya.~Tidak.');
+point[o++] =('7~0~10');
+quiz[r++] =('8~Kamu pikir, pacarmu terlalu melebih-lebihkan masalah?~Ya.~Tidak.');
+point[o++] =('8~0~10');
+quiz[r++] =('9~Kamu malas mendengar jika pacarmu bicara panjang lebar?~Ya.~Tidak.');
+point[o++] =('9~0~10');
+quiz[r++] =('10~Kamu mendengarkan pacarmu curhat, karena ingin menyenangkan hatinya. Kamu jarang memberikan solusi?~Ya.~Tidak.');
+point[o++] =('10~0~10');

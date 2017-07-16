@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~What do you think about flirt?~Not a good idea.~A great way to approach someone you like.~Good, but not your style.~Challenging, but hard to do.~Useless!');
+point[o++] =('1~0~5~1~2~0');
+quiz[r++] =('2~Why flirting is difficult?~Afraid he/she doesn\'t like you.~Not difficult! it\'s fun and challenging.~Never tried it.~Nervous, moreover if he/she knows you like him/her.~Flirt makes you look stupid.');
+point[o++] =('2~1~6~0~2~0');
+quiz[r++] =('3~When go out, what do you wear?~Anything, as long as they\'re clean.~Cool and sexy clothes.~You never miss latest fashion. Above all, expensive jewellery is a must.~Polite but not old-school-fashion.~I am old-school-fashion.');
+point[o++] =('3~0~5~3~3~0');
+quiz[r++] =('4~Do you have many new friends (eg from parties)?~“Yes. If they ask me first.”~“I think so. I like talking with strangers.”~“Of course. Thousands friends are better than one enemy.”~“I don\'t hang out with strangers.”~“If they are cool like me, i think i wanna make friends with them.”');
+point[o++] =('4~1~5~5~0~3');
+quiz[r++] =('5~How do you show intimacy to your partner?~“I do whatever he/she wants.”~“I am romantic, but don\'t want to show in front of public.”~“I\'m a bit ‘naughty’. No matter where, i\'ll show intimacy.”~Holding hands.~“I kiss him/her anytime i like.”');
+point[o++] =('5~5~0~7~0~5');
+quiz[r++] =('6~A great thing, you wanna do in the near future?~To go to cinema and watch the long awaited movie.~To finish reading your favorite book.~To have a big/crazy party.~To hang out with friends.~To sing/dance in the bathroom.');
+point[o++] =('6~1~3~5~3~0');
+quiz[r++] =('7~What are your friends like:~“I don\'t have friend.”~“They are cool and \'crazy\' like i am.”~“They are smart like i am.”~“I only make friends with the opposite sex.”~“I don\'t have a close friend of the opposite sex.”');
+point[o++] =('7~0~5~0~5~0');
+quiz[r++] =('8~When you are at a public place, you see someone\'s cute. You:~Pretend to be cool and not attracted with him/her.~Look at him/her until he/she look back at you, then you smile at him/her.~Try to open a talk.~Wink at him/her.~Pat him/her on the back, then say, “Hi, sweety!”');
+point[o++] =('8~0~5~2~2~0');
+quiz[r++] =('9~You see someone you like is talking with your other friend. You:~Wait until they finish talking, then ask your friend, “Who is he/she?”~Make an eye contact with her/him.~Accidentaly bump him/her, apologize then ask his/her number.~Ask your friend to introduce him/her to you.~Make a noise from where you stand to attract his/her attention.');
+point[o++] =('9~0~5~1~1~0');
+quiz[r++] =('10~When exchanging glances with someone you like. You:~Look at him/her as long as possible, until he/she looks away.~Look at him/her for two or three seconds. (Flirt through eye contact.)~When he/she looks at you, you hurriedly look away.~When he/she looks at you, you give him/her a glimpse of smile.~Too shy to look back at him/her.');
+point[o++] =('10~1~5~2~3~0');

@@ -1,0 +1,1 @@
+msg='Hubungan Kalian '+final_score+'% Tidak Sehat.';				

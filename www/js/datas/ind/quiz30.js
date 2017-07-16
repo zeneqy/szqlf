@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Jika beda pendapat dengan pasanganmu. Kamu:~Sukar diajak kompromi.~Lebih baik mengalah.~Diskusi untuk menyamakan persepsi.');
+point[o++] =('1~2~1~0');
+quiz[r++] =('2~Saat kencan, kamu:~Pasif dan hanya mengikuti ide-idenya.~Pasif jika menyangkut keintiman, tapi aktif jika di luar hal itu.~Banyak ide untuk membuat acara kencan jadi menyenangkan.');
+point[o++] =('2~0~1~2');
+quiz[r++] =('3~Apa yang kamu lakukan jika bertemu orang yang kamu suka?~TP sampai dia tertarik padamu.~Ajak Dia ngobrol dan rebut hatinya.~Mengganggu hidupnya sampai dia takluk padamu.');
+point[o++] =('3~1~2~0');
+quiz[r++] =('4~Masalah yang selalu hadir dalam hubungan kalian?~Kamu ingin jadi sosok yang lebih baik.~Kamu suka menutup diri.~Kamu moody dan sukar ditebak.');
+point[o++] =('4~0~1~2');
+quiz[r++] =('5~Apa perlu mengingat momen special, seperti hari jadian kalian?~Sangat perlu!~Tak perlu!~Sebagai pemanis hubungan saja.');
+point[o++] =('5~2~0~1');
+quiz[r++] =('6~Hal seperti apa menurutmu romantis?~Menghabiskan waktu di rumah kekasih.~Makan malam di restoran favorit.~Clubbing.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Seberapa cepat kamu menyatakan Cinta padanya?~Semakin cepat semakin baik.~Perlahan/bertahap.~Tak terlalu cepat/lambat.');
+point[o++] =('7~0~2~1');
+quiz[r++] =('8~Kamu pernah cemburu?~Tak pernah.~Kadang-kadang.~Sering.');
+point[o++] =('8~0~2~1');
+quiz[r++] =('9~Kamu selalu butuh perhatian dari kekasihmu?~Tidak sama sekali.~Ya, karena Dia adalah milikmu.~Ya, saat kamu ada keperluan dengan dirinya.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~Kamu sudah punya pacar. Sementara ada lawan jenis (lebih sempurna dari kekasihmu) menggodamu. Kamu:~Tak terpengaruh. Kamu setia.~Dilema.~Karena dia tampak lebih menarik dari kekasihmu, kenapa disia-siakan?');
+point[o++] =('10~2~1~0');

@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Menurutmu, TP itu?~Bukan cara bagus buat kenalan.~Cara manjur buat kenalan.~Bagus, tapi bukan gayamu.~Menantang, tapi sulit untuk dipraktekkan.~Tak berguna!');
+point[o++] =('1~0~5~1~2~0');
+quiz[r++] =('2~Menurutmu, apa yang sulit dari TP?~Takut kalau Dia tak tertarik padamu.~Tak sulit, sebaliknya asyik dan menantang.~Belum pernah coba TP.~Grogi, apalagi jika kamu ketauan naksir Dia.~TP membuatmu kelihatan bodoh.');
+point[o++] =('2~1~6~0~2~0');
+quiz[r++] =('3~Apa baju yang kamu pakai saat pergi keluar/jalan-jalan?~Apa saja boleh, asal bersih.~Baju yang bikin kamu keren dan sexy.~Ikuti trend mode terkini dan paling penting perhiasan berharga di sana sini.~Berpakaian sopan dan tak jadul/ketinggalan jaman.~Baju antik/retro/jadul.');
+point[o++] =('3~0~5~3~3~0');
+quiz[r++] =('4~Apa kamu punya banyak kenalan baru (misal:kenal dari pesta, atau suatu acara)?~Ya. Jika mereka yang duluan ajak kamu kenalan.~Iya, kamu suka punya teman-teman baru.~Tentu saja. Seribu teman lebih baik dari satu musuh.~Kamu tak bergaul dengan orang asing.~“Kalo mereka gaul dan asik kayak gue, napa gak?”');
+point[o++] =('4~1~5~5~0~3');
+quiz[r++] =('5~Bagaimana caramu menunjukkan kemesraan?~“Aku menuruti semua kemauan Dia.”~“Aku romantis, tapi risih nunjukin di tempat umum.”.~“Gue sedikit ‘nakal’. Gak perduli dimana saja, selalu mesra sama Dia.”~Cukup saling pegangan tangan.~“Aku dan Dia ciuman kapan dan dimana saja.”');
+point[o++] =('5~5~0~7~0~5');
+quiz[r++] =('6~Hal menarik yang ingin kamu lakukan dalam waktu dekat ini?~Nonton di bioskop film yang sudah lama kamu tunggu.~Baca buku kesukaanmu sampai selesai.~Pesta besar-besaran.~Ngumpul bersama teman dekat.~Nyanyi dan goyang (dangdut) di kamar mandi.');
+point[o++] =('6~1~3~5~3~0');
+quiz[r++] =('7~Seperti apa teman-temanmu?~“Aku tak punya teman.”~Mereka keren dan "gila" seperti kamu.~Pintar seperti kamu.~Kamu hanya berteman dengan lawan jenis.~Tak punya teman dekat dari lawan jenis.');
+point[o++] =('7~0~5~0~5~0');
+quiz[r++] =('8~Saat berada di tempat umum, kamu melihat seorang pria/wanita yang sangat menarik. Kamu:~Pura-pura cuek/tak lihat.~Menatapnya sampai Dia melihat ke arahmu, lalu kamu tersenyum padanya.~Mengajaknya ngobrol.~Mengedipkan mata ke arahnya.~Menepuknya dan bilang “hallo, manis!”');
+point[o++] =('8~0~5~2~2~0');
+quiz[r++] =('9~Kamu melihat Dia sedang asyik ngobrol dengan temanmu. Kamu:~Menunggu sampai Dia selesai ngobrol dengan temanmu, lalu tanya temanmu, “siapa cowok/cewek barusan?”~Membuat kontak mata dengan Dia.~Pura-pura menyenggolnya, minta maaf, lalu ajak kenalan.~Minta tolong temanmu memperkenalkan.~Bikin suara gaduh untuk menarik perhatian Dia.');
+point[o++] =('9~0~5~1~1~0');
+quiz[r++] =('10~Saat bertukar padangan dengan doi. Kamu:~Menatap Dia selama mungkin, sampai dia mengalihkan pandangannya.~Menatap kira-kira dua atau tiga detik. Melancarkan TP lewat tatapan matamu.~Saat dia melihat ke arahmu, kamu segera mengalihkan pandangan.~Ketika Dia menatap ke arahmu, kamu senyum sekilas.~Tak berani membalas tatapan matanya.');
+point[o++] =('10~1~5~2~3~0');

@@ -1,0 +1,19 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 6;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Kamu akan menuju rumah kekasihmu. Ada dua jalan menuju ke sana, jalan mana yang kamu ambil (seandainya kamu tak terburu-buru)?~Jalan A. Jalan tol. Kamu akan lebih cepat sampai, tapi tak ada pemandangan indah.~Jalan B. Jalan pedesaan. Lebih jauh dari jalan A, bahkan jalan rusak di beberapa bagian, tapi pemandangan sangat indah dan menarik.');
+point[o++] =('1~0~1');
+quiz[r++] =('2~Di perjalanan, kamu bisa mampir di toko bunga untuk membeli mawar. Berapa mawar kamu beli untuk Dia?~Tak membeli~1.~2.~3.~4.~5.~6.~7.~8.~9.~10 atau lebih.');
+point[o++] =('2~0~1~2~3~4~5~6~7~8~9~10');
+quiz[r++] =('3~Kamu tiba di rumah kekasihmu. Setelah ketuk pintu, adik laki-lakinya keluar menyambutmu. Dia mempersilahkan kamu duduk, sementara menawarkan untuk memanggil kakaknya. Kamu:~Menanti kekasihmu di ruang tamu, sembari beristirahat setelah perjalanan jauh.~Bilang tak perlu dan kekasihmu sendiri di kamarnya.');
+point[o++] =('3~0~1');
+quiz[r++] =('4~Dimana kamu akan meletakkan bunga (yang kamu beli)?~Di atas meja ruang tamu.~Di kamar Dia (di atas sofa/kasur).');
+point[o++] =('4~0~1');
+quiz[r++] =('5~Hari sudah malam. Keluarganya menawarkan kamu menginap dan kamu setuju. Esok paginya, bangun tidur kamu segera menuju kamar kekasihmu. Ternyata dia masih tidur. Apa yang akan kamu lakukan?~Membangunkannya dan mengucapkan, “pagi, sayang.”~Membiarkan dia tidur.');
+point[o++] =('5~0~1');
+quiz[r++] =('6~Saatnya pulang. Jalan mana yang akan kamu ambil?~Jalan A.~Jalan B.');
+point[o++] =('6~0~1');

@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Seperti apa karaktermu dalam suatu hubungan?~Penurut.~Teratur, tapi juga tak terlalu ketat.~Santai.');
+point[o++] =('1~0~1~2');
+quiz[r++] =('2~Apa peranmu dalam hubungan kalian?~"Hamba Cinta". Kamu turuti semua keinginan Dia.~"Ratu/raja".~Kamu dan Dia sejajar.');
+point[o++] =('2~2~0~1');
+quiz[r++] =('3~Apa kamu merasa terluka, jika bertengkar dengan Dia?~Ya. Kamu sangat sensitif.~Tidak sama sekali. Kamu sangat tegar.~Kadang-kadang.');
+point[o++] =('3~2~0~1');
+quiz[r++] =('4~Seberapa sering kamu berbagi fantasi/khayalan dengan kekasihmu?~Tak pernah.~Sesekali.~Setiap saat.');
+point[o++] =('4~0~1~2');
+quiz[r++] =('5~Jika baru jadian, kamu:~Agresif.~Pemalu.~Berhati-hati.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~Apa yang harus kamu lakukan untuk menghangatkan hubungan?~Melakukan apa saja untuk memuaskan Dia.~Setia dan jujur pada pasangan.~Mandiri.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Apa kamu setuju, rahasia tak harus dibagi ke pasangan (walau sebuah rahasia kecil yang tak bakal mempengaruhi hubungan)~Iya, agar Dia makin penasaran terhadap dirimu.~Setuju, karena setiap orang punya privacy masing-masing.~Tak setuju, karena seharusnya tak ada rahasia antara kamu dan Dia.');
+point[o++] =('7~1~2~0');
+quiz[r++] =('8~Apa yang ingin kamu lakukan saat kencan?~Clubbing sampai larut pagi.~Makan malam/nonton DVD di rumah bersama kekasih.~Nonton film romantis di bioskop.');
+point[o++] =('8~0~2~1');
+quiz[r++] =('9~Hal apa yang dapat membuatmu tertarik pada lawan jenis?~Dia sensitif dan perhatian.~Dia dapat melindungimu/memberimu rasa aman.~Dia dapat memenuhi kebutuhanmu.');
+point[o++] =('9~1~2~0');
+quiz[r++] =('10~Apa moto-mu (dalam hal Cinta)?~Tak egois (Cinta tanpa pamrih).~Beri Cinta sama besarnya dengan yang Dia berikan untukmu.~Beri perhatian secukupnya agar Dia tak ngambek.');
+point[o++] =('10~2~1~0');

@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Menurutmu, mesra di depan umum itu?~Menjijikkan.~Menyenangkan, asal tak terlalu banyak orang di sekeliling.~Semakin ramai orang di sekeliling, maka semakin seru.');
+point[o++] =('1~0~1~2');
+quiz[r++] =('2~Apa kamu suka dimanja?~Ya, terutama pada hari khusus (mis:ultah, hari jadian, pernikahan, dst).~Setiap waktu.~Tak suka.');
+point[o++] =('2~1~2~0');
+quiz[r++] =('3~Kualitas seperti apa yang kamu cari dari lawan jenis?~Tak segan mengeluarkan uang demi kamu.~Berpendirian.~Manja.');
+point[o++] =('3~2~1~0');
+quiz[r++] =('4~Apa peranmu dalam suatu hubungan?~Pengikut.~Pemimpin.~Kadang pemimpin, kadang pengikut.');
+point[o++] =('4~0~2~1');
+quiz[r++] =('5~Apa kamu bersedia tampak bodoh demi membuat senang orang yang kamu sukai?~Tidak. Kamu tak akan membiarkan itu terjadi.~Ya, Cinta memang butuh pengorbanan.~Ya, asal Dia sangat spesial untukmu.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~Jika kamu tertarik pada seseorang. Besar kesempatanmu untuk menjadikan Dia pacar?~Sangat besar. Kamu sangat tahu cara untuk mendapatkan keinginanmu.~Cukup besar. Kamu punya keberuntungan.~Sangat kecil. Kamu pemalu dan kurang percaya diri.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Hal apa paling penting dalam suatu hubungan?~Dapat saling berbagi peran.~Saling tergantung satu sama lain.~Tak membosankan. Harus menyenangkan dan romantis.');
+point[o++] =('7~1~0~2');
+quiz[r++] =('8~Apa pendapatmu, jika kamu dan pasangan saling menggoda?~Menyenangkan.~Kekanak-kanakan.~Boleh saja asal sedang mood.');
+point[o++] =('8~2~0~1');
+quiz[r++] =('9~Bagaimana perasaanmu jika diabaikan oleh kekasihmu?~Sangat sedih/kecewa.~Tak masalah, asal jangan keseringan.~Tak perduli, karena kamu sendiri sama cueknya.');
+point[o++] =('9~2~1~0');
+quiz[r++] =('10~Kamu bertemu dengan pria/wanita yang lebih menarik dari pasanganmu. Kebetulan Dia juga menaruh hati padamu. Kamu:~Tak terpengaruh. Kamu setia.~Mencari cara untuk putus dengan kekasihmu.~Kamu berusaha untuk tetap setia.');
+point[o++] =('10~2~0~1');

@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~What do you think about--Showing affection in public?~Disgusting.~Enjoy them, as long as not many people around.~It\'s more fun at crowded place.');
+point[o++] =('1~0~1~2');
+quiz[r++] =('2~How do you like to be pampered?~Yes, especially on special moment (eg your birthday, anniversary, etc).~All the time.~Don\'t like!');
+point[o++] =('2~1~2~0');
+quiz[r++] =('3~What quality do you look for in guys/girls?~Spend his/her money on you.~Resolute.~Spoiled guy/girl.');
+point[o++] =('3~2~1~0');
+quiz[r++] =('4~What your role in a relationship?~Follower.~Leader.~Can be either Leader or follower (depends on situations).');
+point[o++] =('4~0~2~1');
+quiz[r++] =('5~Do you want to act like a dumb guy/girl in order to please the one you like/Love?~No. You won\'t let it happen.~Yes, Love needs sacrifice.~Yes, if he/she is very special to you.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~If you are attracted to someone. How big is your chance of getting him/her?~Big chance. You really know how to get what you want.~Quite big. You have the luck.~Small chance. You are shy and not self-confident.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~What is important thing in a relationship?~Can equally share roles in a relationship.~You both are interdepenudent on each other.~Not boring, have to be fun and romantic.');
+point[o++] =('7~1~0~2');
+quiz[r++] =('8~What do you think about--teasing each other in a relationship?~Fun.~Too childish.~Only if in the mood.');
+point[o++] =('8~2~0~1');
+quiz[r++] =('9~How do you feel if your partner ignore you?~So sad/dissapointed.~No problem, as long as not too often.~Don\'t care, you yourself often ignore him/her too.');
+point[o++] =('9~2~1~0');
+quiz[r++] =('10~You meet a guy/girl who is more attractive than your boy/girlfriend. By any chance he/she has feelings for you. You:~Unaffected. You\'re loyal.~Think a way to break up with your boy/girlfriend.~You do your best to be loyal to your boy/girlfriend.');
+point[o++] =('10~2~0~1');

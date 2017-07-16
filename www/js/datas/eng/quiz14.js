@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~You don\'t make friends easily?~Yes.~No.');
+point[o++] =('1~10~0');
+quiz[r++] =('2~You don\'t trust other people easily?~Yes.~No.');
+point[o++] =('2~10~0');
+quiz[r++] =('3~Even with members of family, relatives, partner, or close friends, you don\'t trust them 100 percent?~Yes.~No.');
+point[o++] =('3~10~0');
+quiz[r++] =('4~You prefer to deal with your problems alone?~Yes.~No.');
+point[o++] =('4~10~0');
+quiz[r++] =('5~Your are not close with opposite sex friends?~Yes.~No.');
+point[o++] =('5~10~0');
+quiz[r++] =('6~You don\'t share your personal informations (eg your birthday date, phone number, relationship status, etc) to strangers?~Yes.~No.');
+point[o++] =('6~10~0');
+quiz[r++] =('7~When you talk, only say what is necessary?~Yes.~No.');
+point[o++] =('7~10~0');
+quiz[r++] =('8~You blame your luck when something bad happens?~Yes.~No.');
+point[o++] =('8~10~0');
+quiz[r++] =('9~Before starting a new relationship, your main consideration: Are you going to get hurt again?~Yes.~No.');
+point[o++] =('9~10~0');
+quiz[r++] =('10~If you watch movies, sad/horror movies will be your top choices?~Yes.~No.');
+point[o++] =('10~10~0');

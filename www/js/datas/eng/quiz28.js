@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~If you don\'t like his/her habits. You:~Give him/her some time to change, meanwhile you can tolerate him/her.~Force him/her to change his/her bad habits, or you\'ll leave him/her.~Nobody is perfect. You can accept him/her the ways he/she is.');
+point[o++] =('1~1~2~0');
+quiz[r++] =('2~Have you ever been jealous of your partner?~Never.~Sometimes.~Often.');
+point[o++] =('2~0~1~2');
+quiz[r++] =('3~What situation do you hate most?~Your partner can\'t accompany you because of office duties.~Your partner doesn\'t give you attention.~You have to pay too much (eg expensive dishes, gifts, etc), or have to spend to much time with him/her.');
+point[o++] =('3~1~2~0');
+quiz[r++] =('4~When you have a date with him/her. You:~Let him/her arrange the date (eq where and when, what to do, etc).~If you have no idea what to do on the date, you let him/her arrange the date.~Make sure the date goes well according to your plan.');
+point[o++] =('4~0~1~2');
+quiz[r++] =('5~What is a fun relationship?~Relaxed and casual.~Full of adventures and surprises.~A combination of those mentioned above.');
+point[o++] =('5~0~2~1');
+quiz[r++] =('6~Do you share your dream with your partner?~Never.~If only your dream is realistic enough to tell him/her.~Often.');
+point[o++] =('6~0~1~2');
+quiz[r++] =('7~After a big fight. You:~Apologize right away and resolve the problem.~Get intimate again, like nothing has happened.~Never have had enough, it\'s all his/her fault.');
+point[o++] =('7~1~2~0');
+quiz[r++] =('8~If your are bored with your relationship. You:~Have many ideas to liven the relationship, but no rush to execute them.~Do something "crazy" or "wild" to liven the relationship.~Let it be.');
+point[o++] =('8~1~2~0');
+quiz[r++] =('9~When you like someone, do you want to know more about him/her?~Yes and the process--the more challenging the better.~No necessary, just waste of time.~Yes, if he/she worths it.');
+point[o++] =('9~2~0~1');
+quiz[r++] =('10~When approach someone you like. You:~Try hard to get him/her to like you.~Pray to God that she will like you.~Don\'t care.');
+point[o++] =('10~2~0~0');

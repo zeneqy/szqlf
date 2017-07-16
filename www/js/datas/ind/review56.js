@@ -1,0 +1,1 @@
+msg='Kamu '+final_score+'% jatuh cinta sama Dia.';

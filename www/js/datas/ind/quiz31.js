@@ -1,0 +1,27 @@
+var quiz = new Array();
+var point = new Array(); 
+var r = 0; 
+var o=0; 
+var quest = 10;
+var score = 0;
+//f0,f1,f2,..
+quiz[r++] =('1~Seberapa penting status sosial bagimu?~Tak penting sama sekali.~Penting.~Sangat penting.');
+point[o++] =('1~2~1~0');
+quiz[r++] =('2~Saat pendekatan, kamu cenderung:~Ceroboh.~Terencana.~Berhati-hati.');
+point[o++] =('2~0~1~2');
+quiz[r++] =('3~Apa yang bakal kamu lakukan untuk mempererat hubungan?~Humor.~Selalu menepati janji.~Tak pernah lupa hari jadian kalian dan beri dia hadiah.');
+point[o++] =('3~1~2~0');
+quiz[r++] =('4~Pria/wanita seperti apa yang bikin kamu tertarik?~Punya kekuasaan.~Kaya.~Penurut.');
+point[o++] =('4~0~1~2');
+quiz[r++] =('5~Bagaimana caramu menunjukkan rasa suka pada lawan jenis?~Berkenalan dengan mereka.~TP.~Berdoa.');
+point[o++] =('5~2~0~1');
+quiz[r++] =('6~Apa yang akan kamu lakukan agar hubungan kalian bisa bertahan lama?~Kamu akan melakukan apa pun.~Kamu akan mempertahankan hubunganmu hanya jika pantas dipertahankan.~Tak berbuat apa-apa, biarkan berjalan sesuai keadaan.');
+point[o++] =('6~2~1~0');
+quiz[r++] =('7~Jika baru memulai suatu hubungan, kamu tak mudah percaya terhadap pasanganmu?~Ya, kamu butuh waktu untuk sepenuhnya percaya pada pasanganmu.~Kamu percaya Dia 100%.~Pada dasarnya kamu percaya Dia, tapi untuk percaya sepenuhnya butuh waktu.');
+point[o++] =('7~0~2~1');
+quiz[r++] =('8~Malam yang romantis, menurutmu adalah seperti apa?~"Gila".~Elegan.~Sunyi.');
+point[o++] =('8~0~2~1');
+quiz[r++] =('9~Kamu mudah jatuh Cinta?~Betul!~Tidak!.~Kadang-kadang.');
+point[o++] =('9~0~2~1');
+quiz[r++] =('10~Apa hal paling penting menurutmu dalam sebuah hubungan?~Dia selalu bahagia bersamamu.~Kesetiaan.~Kamu dan Dia bersenang-senang.');
+point[o++] =('10~2~1~0');
